@@ -215,6 +215,10 @@ func parseUseGooglePlayServices(buildGradleContent string) (bool, error) {
 }
 
 func analyzeWithGradlew(buildGradlePth, gradlewPth string) (string, string, error) {
+
+	println 'buildGradlePth: '+ buildGradlePth
+	println 'gradlewPth: '+string
+
 	analyzerScriptContent := `
 if (plugins.hasPlugin('com.android.application')) {
 	println 'compileSdkVersion: '+android.compileSdkVersion
